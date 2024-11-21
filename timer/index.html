@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cubedex</title>
-        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <title>Cubedex Timer</title>
+        <link rel="icon" href="../images/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="topnb-image-container">
-            <img src="images/mainbar.png" alt="Image" width="95%" draggable="false">
+            <img src="../images/mainbar.png" alt="Image" width="95%" draggable="false">
             <button class="topnb-overlay-button" id="topnb-ic1">Learn</button>
-            <button class="topnb-overlay-button" id="topnb-ic2" onclick="location.href='dashboard/index.html'">Dashboard</button>
+            <button class="topnb-overlay-button" id="topnb-ic2" onclick="location.href='dashboard.html'">Dashboard</button>
             <button class="topnb-overlay-button" id="topnb-ic3">Leaderboard</button>
-            <button class="topnb-overlay-button" id="topnb-ic4" onclick="location.href='timer/index.html'">Timer</button>
+            <button class="topnb-overlay-button" id="topnb-ic4" onclick="location.href='timer.html'">Timer</button>
             <style>
                 .topnb-image-container {
                    position: relative;
@@ -46,7 +46,18 @@
                 }
             </style>
         </div>
-        <img src="images/learncubingimage.png" width="40%" id="lci1">
-        <img src="images/learncubingimage2.png" width="40%" id="lci2">
+        <a id="scrambleOutput">Next Scramble: </a>       
+        <button onclick="generateScramble()">Regenerate Scramble</button>
+        <br>
+        <button id="button1">Timer:</button>
+        <button id="button2"></button>
+        <br>
+        <button id="button3" onclick="timerClicked()">Press here to start</button>
+        <p id="besttime">Best Time: ##</p>
+        <p id="lasttimes">Last Times: ##, ##, ##, ##, ##</p>
+        <p id="avaragetime">Avarage Time: ##</p>
+        <label for="lengthSlider">Scramble Length: <span id="lengthValue">20</span></label>
+        <input type="range" id="lengthSlider" min="10" max="50" value="20"> 
+        <script src="script.js"></script>
     </body>
 </html>
