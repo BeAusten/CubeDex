@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cubedex</title>
+        <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnb-image-container">
+            <img src="../images/mainbar.png" alt="Image" width="95%" draggable="false">
+            <button class="topnb-overlay-button" id="topnb-ic1">Learn</button>
+            <button class="topnb-overlay-button" id="topnb-ic2" onclick="location.href='../dashboard'">Dashboard</button>
+            <button class="topnb-overlay-button" id="topnb-ic3">Leaderboard</button>
+            <button class="topnb-overlay-button" id="topnb-ic4" onclick="location.href='../timer'">Timer</button>
+            <style>
+                .topnb-image-container {
+                   position: relative;
+                    display: inline-block;
+                }
+                .topnb-overlay-button {
+                   position: absolute;
+                   top: 50%;
+                   left: 10%;
+                   transform: translate(-50%, -50%);
+                    height: 68%;
+                   padding: 0 30px;
+                   font-size: 30px;
+                    border: 0;
+                    border-radius: 50px;
+                    background: none;
+                }
+                .topnb-overlay-button:hover  {
+                    background-color: rgb(225, 225, 225);
+                }
+                #topnb-ic1 {
+                    left: 10%;
+                }
+                #topnb-ic2 {
+                    left: 33%;
+                }
+                #topnb-ic3 {
+                    left: 67%;
+                }
+                #topnb-ic4 {
+                    left: 89%;
+                }
+            </style>
+        </div>
+        <div class="leaderboard">
+            <div class="header">
+                <div>Logo</div>
+                <div>Name</div>
+                <div>Points</div>
+                <div>Badge</div>
+            </div>
+            <div class="row">
+                <div class="logo"></div>
+                <div>
+                <strong class="username">USERNAME</strong>
+                <div class="tag">Banner Tag Name</div>
+                </div>
+                <div class="points">258 821</div>
+                <div class="badge"></div>
+            </div>
+            <!-- Kopieer de "row" div meerdere keren als nodig -->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubus Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kubus Database</h1>
+    </header>
+    <main>
+        <section id="tijden-scrambles">
+            <h2>Tijden en Scrambles</h2>
+            <ul id="lijst1"></ul>
+            <input type="text" id="tijdInput" placeholder="Tijd (bijv. 5.67s)">
+            <input type="text" id="scrambleInput" placeholder="Scramble (bijv. R U R' U)">
+            <button onclick="voegTijdToe()">Voeg Toe</button>
+        </section>
+        <section id="kubus-afbeeldingen">
+            <h2>Kubus Afbeeldingen</h2>
+            <ul id="lijst2"></ul>
+            <input type="text" id="kubusNaamInput" placeholder="Kubus Naam">
+            <input type="text" id="kubusAfbeeldingInput" placeholder="Afbeelding URL">
+            <input type="text" id="besteTijdInput" placeholder="Beste Tijd (bijv. 1.50s)">
+            <input type="text" id="gemiddeldeTijdInput" placeholder="Gemiddelde Tijd (bijv. 2.00s)">
+            <button onclick="voegKubusToe()">Voeg Toe</button>
+        </section>
+        <section id="gespeelde-toernooien">
+            <h2>Gespeelde Toernooien</h2>
+            <ul id="lijst3"></ul>
+            <input type="text" id="toernooiNaamInput" placeholder="Toernooi Naam">
+            <input type="text" id="landInput" placeholder="Land">
+            <input type="text" id="besteToernooiTijdInput" placeholder="Beste Tijd (bijv. 5.10s)">
+            <input type="text" id="gemiddeldeToernooiTijdInput" placeholder="Gemiddelde Tijd (bijv. 6.20s)">
+            <input type="text" id="slechtsteToernooiTijdInput" placeholder="Slechtste Tijd (bijv. 7.50s)">
+            <input type="text" id="toernooiAfbeeldingInput" placeholder="Afbeelding URL">
+            <button onclick="voegToernooiToe()">Voeg Toe</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
